@@ -11,11 +11,15 @@ use Net::Akamai::ResponseData;
 
 =head1 NAME
     
-Net::Akamai 
+Net::Akamai - Utility to interface with Akamai's API 
     
 =head1 SYNOPSIS
 
- my $data = new Net::Akamai::RequestData(email=>'my@email.com');
+ my $data = new Net::Akamai::RequestData(
+ 	email=>'my@email.com', 
+	user => 'myuser', 
+	pwd => 'mypass'
+ );
  $data->add_url('http://www.myurl.com');
  $data->add_url('http://www.myurl.com/somethingelse');
  my $ap = new Net::Akamai(req_data=>$data);
@@ -29,7 +33,7 @@ Patches welcome for extra functionality
 
 =cut
 
-our $VERSION = '0.10';
+our $VERSION = '0.11';
 
 =head1 Attributes
 
@@ -88,7 +92,7 @@ has 'soap' => (
 
 =head2 req_data 
 
-holds all of the data associated with an akamai request
+Net::Akamai::RequestData object to hold data associated with an akamai request
 
 =cut
 has 'req_data' => (
@@ -103,7 +107,7 @@ has 'req_data' => (
 
 =head2 res_data 
 
-holds all of the data associated with an akamai response
+Net::Akamai::ResponseData object holds data associated with an akamai response
 
 =cut
 has 'res_data' => (

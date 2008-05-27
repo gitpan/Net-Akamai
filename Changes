@@ -1,3 +1,7 @@
 
+0.11	2008-05-27 
+		- Updated MX::AH to play nice with new Moose version
+		- Updated docs
+
 0.10	2008-05-19 
 		- Initial release.

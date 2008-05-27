@@ -1,8 +1,12 @@
 NAME
-    Net::Akamai
+    Net::Akamai - Utility to interface with Akamai's API
 
 SYNOPSIS
-     my $data = new Net::Akamai::RequestData(email=>'my@email.com');
+     my $data = new Net::Akamai::RequestData(
+            email=>'my@email.com', 
+            user => 'myuser', 
+            pwd => 'mypass'
+     );
      $data->add_url('http://www.myurl.com');
      $data->add_url('http://www.myurl.com/somethingelse');
      my $ap = new Net::Akamai(req_data=>$data);
@@ -27,10 +31,12 @@ Attributes
     SOAP::Lite object
 
   req_data
-    holds all of the data associated with an akamai request
+    Net::Akamai::RequestData object to hold data associated with an akamai
+    request
 
   res_data
-    holds all of the data associated with an akamai response
+    Net::Akamai::ResponseData object holds data associated with an akamai
+    response
 
 Methods
   purge

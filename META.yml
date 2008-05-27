@@ -1,5 +1,5 @@
 ---
-abstract: ~
+abstract: 'Utility to interface with Akamai''s API '
 author:
   - 'John Goulah  <jgoulah@cpan.org>'
 distribution_type: module
@@ -16,10 +16,10 @@ no_index:
 requires:
   Crypt::SSLeay: 0.57
   Digest::MD5: 2.36
-  Moose: 0.44
-  MooseX::AttributeHelpers: 0.08
+  Moose: 0.45
+  MooseX::AttributeHelpers: 0.09
   MooseX::Types: 0.04
   SOAP::Lite: 0.710.05
   Text::Tabs: 0
 tests: t/*.t
-version: 0.10
+version: 0.11
