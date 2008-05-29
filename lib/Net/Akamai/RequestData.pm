@@ -7,7 +7,7 @@ use Net::Akamai::RequestData::Types;
 
 =head1 NAME
     
-Net::Akamai::RequestData  
+Net::Akamai::RequestData - Object to hold request data 
     
 =head1 DESCRIPTION
 

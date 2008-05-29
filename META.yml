@@ -22,4 +22,4 @@ requires:
   SOAP::Lite: 0.710.05
   Text::Tabs: 0
 tests: t/*.t
-version: 0.11
+version: 0.12

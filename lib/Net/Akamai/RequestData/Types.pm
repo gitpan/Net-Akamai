@@ -6,7 +6,7 @@ use SOAP::Lite;
 
 =head1 NAME
     
-Net::Akamai::RequestData::Types  
+Net::Akamai::RequestData::Types - Define request data types for coercion 
     
 =head1 DESCRIPTION
 

@@ -4,7 +4,7 @@ use Moose;
 
 =head1 NAME
     
-Net::Akamai::RequestData  
+Net::Akamai::ResponseData - Object to hold response data 
     
 =head1 DESCRIPTION
 
