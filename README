@@ -11,8 +11,8 @@ SYNOPSIS
      $data->add_url('http://www.myurl.com/somethingelse');
      my $ap = new Net::Akamai(req_data=>$data);
      my $res = $ap->purge;
-     
- if (!$res->accepted) {
+ 
+     if (!$res->accepted) {
             die "$res";
      }
      elsif ($res->warning) {
