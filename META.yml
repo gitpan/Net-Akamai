@@ -3,12 +3,13 @@ abstract: "Utility to interface with Akamai's API "
 author:
   - 'John Goulah  <jgoulah@cpan.org>'
 build_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.36
   Test::More: 0.94
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.36
 distribution_type: module
-generated_by: 'Module::Install version 1.00'
+dynamic_config: 1
+generated_by: 'Module::Install version 1.06'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -20,9 +21,9 @@ no_index:
     - t
 requires:
   Crypt::SSLeay: 0.57
-  Moose: 0.45
+  Moose: 2.1202
   MooseX::AttributeHelpers: 0.09
   SOAP::Lite: 0.710.05
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.14
+version: 0.15
